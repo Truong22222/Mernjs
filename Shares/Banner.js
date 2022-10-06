@@ -1,13 +1,12 @@
 import React,{useState , useEffect} from 'react'
 import { Image, StyleSheet, Dimensions, View , ScrollView} from 'react-native';
-import Swiper from 'react-native-swiper/src';
+import Swiper from 'react-native-swipe-list-view';
 
 var { width } = Dimensions.get("window");
-
+var {height} = Dimensions.get("window");
 
 const Banner = () =>{
     const[bannerData,setBannerData] =useState([])
-
     useEffect(() => {
         setBannerData([
             "https://images.vexels.com/media/users/3/126443/preview2/ff9af1e1edfa2c4a46c43b0c2040ce52-macbook-pro-touch-bar-banner.jpg",
@@ -36,7 +35,6 @@ const Banner = () =>{
                             style={styles.imageBanner}
                             resizeMode="contain"
                             source={{uri :item}}
-
                         />
                     );
                 })}
@@ -65,7 +63,5 @@ const styles= StyleSheet.create({
         marginHorizontal :10
     }
 })
-
-
 
 export default Banner;

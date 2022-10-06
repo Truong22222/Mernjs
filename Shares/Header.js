@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet,Image, SafeAreaView,View } from 'react-native';
+import { StyleSheet, Image, SafeAreaView } from 'react-native';
 
 
 
@@ -20,9 +20,7 @@ const Header = () => {
         const styles = StyleSheet.create({
             header:{
                 width: "100%",
-                flexDirection : 'row',
-                alignContent : "center",
-                justifyContent : "center",            
+                flexDirection : 'row',      
                 paddingTop:50
                
             }
